@@ -22,7 +22,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import za.co.appelement.balo.ui.theme.BaloTheme
 
 @Composable
-fun ControlPanel(gameViewModel: GameViewModel, onGameOver: () -> Unit) {
+fun ControlPanel(gameViewModel: GameViewModel) {
     Row(modifier = Modifier.padding(10.dp)) {
         ElevatedButton(
             onClick = { gameViewModel.validateNoAnswer() },
@@ -68,6 +68,6 @@ fun ControlPanel(gameViewModel: GameViewModel, onGameOver: () -> Unit) {
 @Composable
 fun ControlPanelPreview(){
     BaloTheme {
-        ControlPanel(gameViewModel = viewModel(), onGameOver = { })
+        ControlPanel(gameViewModel = viewModel())
     }
 }

@@ -28,8 +28,8 @@ fun Game(modifier: Modifier = Modifier, onClick: () -> Unit, onGameOver: () -> U
             .padding(4.dp)
     ) {
         InformationPanel(onClick, modifier, factor, score, counter)
-        MultipleCandidate(modifier.weight(1.0f), multiple)
-        ControlPanel(gameViewModel, onGameOver)
+        MultipleDisplay(modifier.weight(1.0f), multiple)
+        ControlPanel(gameViewModel)
     }
 }
 
