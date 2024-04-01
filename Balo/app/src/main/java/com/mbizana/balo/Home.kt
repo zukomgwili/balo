@@ -1,8 +1,7 @@
-package za.co.appelement.balo
+package com.mbizana.balo
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -18,10 +17,10 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import za.co.appelement.balo.ui.theme.BaloTheme
+import com.mbizana.balo.ui.theme.BaloTheme
 
 @Composable
-fun GameOver(modifier: Modifier, onClick: () -> Unit) {
+fun Home(modifier: Modifier, onClick: () -> Unit) {
     Box(
         modifier = modifier
             .fillMaxWidth()
@@ -35,24 +34,23 @@ fun GameOver(modifier: Modifier, onClick: () -> Unit) {
                 .width(150.dp)
                 .height(150.dp),
             colors = ButtonColors(
-                containerColor = MaterialTheme.colorScheme.secondary,
-                contentColor = MaterialTheme.colorScheme.onSecondary,
-                disabledContentColor = Color.White,
-                disabledContainerColor = Color.Gray
+                containerColor = MaterialTheme.colorScheme.primaryContainer,
+                contentColor = MaterialTheme.colorScheme.onPrimaryContainer,
+                disabledContainerColor = Color.Gray,
+                disabledContentColor = Color.White
             )
         ) {
-            Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                Text(text = "game", fontSize = 30.sp, color = MaterialTheme.colorScheme.onSecondary)
-                Text(text = "over", fontSize = 30.sp, color = MaterialTheme.colorScheme.onSecondary)
-            }
+            Text(text = "start", fontSize = 30.sp)
         }
     }
 }
 
-@Preview(showBackground = true)
+@Preview
 @Composable
-fun GameOverPreview() {
+fun HomePreview(){
     BaloTheme {
-        GameOver(onClick = {}, modifier = Modifier)
+        Home(modifier = Modifier) {
+
+        }
     }
 }

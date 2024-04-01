@@ -1,4 +1,4 @@
-package za.co.appelement.balo
+package com.mbizana.balo
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

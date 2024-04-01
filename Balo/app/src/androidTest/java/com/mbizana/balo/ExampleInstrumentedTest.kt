@@ -1,4 +1,4 @@
-package za.co.appelement.balo
+package com.mbizana.balo
 
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.junit4.createComposeRule
@@ -12,7 +12,7 @@ import org.junit.runner.RunWith
 
 import org.junit.Assert.*
 import org.junit.Rule
-import za.co.appelement.balo.ui.theme.BaloTheme
+import com.mbizana.balo.ui.theme.BaloTheme
 
 /**
  * Instrumented test, which will execute on an Android device.
@@ -27,7 +27,7 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("za.co.appelement.balo", appContext.packageName)
+        assertEquals("com.mbizana.balo", appContext.packageName)
     }
 
     @Test

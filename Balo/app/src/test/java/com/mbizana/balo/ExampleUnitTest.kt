@@ -1,4 +1,4 @@
-package za.co.appelement.balo
+package com.mbizana.balo
 
 import org.junit.Test
 

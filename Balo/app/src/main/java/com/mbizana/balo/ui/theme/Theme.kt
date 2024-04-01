@@ -1,4 +1,4 @@
-package za.co.appelement.balo.ui.theme
+package com.mbizana.balo.ui.theme
 import android.app.Activity
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme

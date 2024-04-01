@@ -1,4 +1,4 @@
-package za.co.appelement.balo
+package com.mbizana.balo
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -22,7 +22,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import za.co.appelement.balo.ui.theme.BaloTheme
+import com.mbizana.balo.ui.theme.BaloTheme
 
 @Composable
 fun InformationPanel(

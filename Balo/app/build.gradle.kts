@@ -4,15 +4,15 @@ plugins {
 }
 
 android {
-    namespace = "za.co.appelement.balo"
+    namespace = "com.mbizana.balo"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "za.co.appelement.balo"
+        applicationId = "com.mbizana.balo"
         minSdk = 24
         targetSdk = 34
-        versionCode = 2
-        versionName = "2.0"
+        versionCode = 1
+        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {

@@ -1,4 +1,4 @@
-package za.co.appelement.balo
+package com.mbizana.balo
 
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -19,7 +19,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import za.co.appelement.balo.ui.theme.BaloTheme
+import com.mbizana.balo.ui.theme.BaloTheme
 
 @Composable
 fun ControlPanel(gameViewModel: GameViewModel) {
